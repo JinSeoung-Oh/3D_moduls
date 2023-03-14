@@ -2,6 +2,8 @@ import numpy as np
 from pyquaternion import Quaternion
 from plyfile import PlyData
 
+#only lidar data
+
 def rotate(points, rot_matrix):
     points[:3, :] = np.dot(rot_matrix, points[:3, :])
    
