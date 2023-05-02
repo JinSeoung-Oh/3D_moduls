@@ -16,7 +16,8 @@ def rgbd_to_pcd(depth_fx, depth_fy, depth_cx, depth_cy, rgb_fx, rgb_fy, rgb_cv, 
   for i in range(h):
     for j in range(w):
       #get points from depth image
-      z = depth_image[i][j]
+      #depth_image[i][j] contain same value --> ex) [112 112 112]
+      z = depth_image[i][j][0]
       x = (j-depth_cx) * z / depth_fx
       y = (i-depth_cy) * z / depth_fy
       pcd.append([x,y,z])
