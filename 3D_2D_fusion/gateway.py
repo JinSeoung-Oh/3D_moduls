@@ -91,6 +91,6 @@ if __name__ == '__main__':
                 port=8182,
                 reload=True,
                 workers=1,
-                #ssl_keyfile="./ml.crowdworks.kr/key_nopass.pem",  
-                #ssl_certfile="./ml.crowdworks.kr/star_crowdworks_kr_cert.crt"
+                #ssl_keyfile="./....pem",  
+                #ssl_certfile="./....crt"
                 )
